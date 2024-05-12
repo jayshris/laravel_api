@@ -1,0 +1,5 @@
+Section 1 
+- Model,migration, factories and seeders
+1. laravel new laravel_api
+2. php artisan make:model
+3. php artisan migrate --seed
