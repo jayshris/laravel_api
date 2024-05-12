@@ -1,4 +1,4 @@
-Section 1 
+Section 4 -  Build APIs 
 - Model,migration, factories and seeders
 1. laravel new laravel_api
 2. php artisan make:model
@@ -19,7 +19,11 @@ Section 1
 - Update API
   php artisan make:controller --invokable
 - Delete API
+========================================================================
 
+Section 5 - API authentication with Sactum 
+-  Setting up Sactum
+   php artisan config:publish cors
 ---------------------------------------
 
 ---------------------------------------
