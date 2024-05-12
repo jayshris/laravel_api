@@ -25,5 +25,22 @@ Section 5 - API authentication with Sactum
 -  Setting up Sactum
    php artisan config:publish cors
 ---------------------------------------
+- SPA authentication Signin 
+  php artisan make:controller Auth/LoginController -i
+  php artisan make:request LoginRequest
+  php artisan tinkerApp
+    - App\Models\User::factory()->create()
 
+    -  pre request script in postman
+     pm.sendRequest({
+            url:"http://localhost:8000/sanctum/csrf-cookie",
+            method:"GET"
+        },function(err,res,{cookies}){
+            if(!err){
+                console.log(cookies.get("XSRF-TOKEN"));
+            pm.globals.set("csrf-token",cookies.get("XSRF-TOKEN")) 
+            }
+        });
+
+    - X-XSRF-TOKEN {{csrf-token}}  
 ---------------------------------------
