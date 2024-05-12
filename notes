@@ -9,3 +9,17 @@ Section 1
 1. php artisan install:api
 2. php artisan route:list --path
 ---------------------------------------
+
+- Eloquant API resource
+1. php artisan make:resource TaskResource 
+2. php artisan route:list --path
+
+---------------------------------------
+- Add API
+- Update API
+  php artisan make:controller --invokable
+- Delete API
+
+---------------------------------------
+
+---------------------------------------
