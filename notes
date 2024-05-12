@@ -3,3 +3,9 @@ Section 1
 1. laravel new laravel_api
 2. php artisan make:model
 3. php artisan migrate --seed
+---------------------------------------
+
+- Creatin first API endpoint
+1. php artisan install:api
+2. php artisan route:list --path
+---------------------------------------
