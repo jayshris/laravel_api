@@ -14,7 +14,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Task::factory(10)->create();
+        User::factory(5)->has(
+            Task::factory(10)
+        )->create();
 
         // User::factory()->create([
         //     'name' => 'Test User',

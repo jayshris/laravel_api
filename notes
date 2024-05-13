@@ -52,5 +52,14 @@ Section 5 - API authentication with Sactum
 - Registration   
   php artisan make:controller Auth/LogoutController -i
   php artisan make:request RegisterRequest     
-
+---------------------------------------
 - S5 - 25. Using Sanctum for API Token Authentication  
+
+php artisan route:list --path=api
+---------------------------------------
+
+- Relationship 
+php artisan make:migration add_user_id_to_taks
+php artisan migrate:fresh --seed
+---------------------------------------
+
