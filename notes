@@ -35,6 +35,7 @@ Section 5 - API authentication with Sactum
      pm.sendRequest({
             url:"http://localhost:8000/sanctum/csrf-cookie",
             method:"GET"
+
         },function(err,res,{cookies}){
             if(!err){
                 console.log(cookies.get("XSRF-TOKEN"));
@@ -44,3 +45,10 @@ Section 5 - API authentication with Sactum
 
     - X-XSRF-TOKEN {{csrf-token}}  
 ---------------------------------------
+- Lougout
+  -  php artisan make:controller Auth/LogoutController -i
+
+---------------------------------------
+- Registration   
+  php artisan make:controller Auth/LogoutController -i
+  php artisan make:request RegisterRequest     
